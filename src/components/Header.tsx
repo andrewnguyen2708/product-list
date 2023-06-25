@@ -1,6 +1,6 @@
 type HeaderProps = {
   searchValue: string;
-  setSearchValue: (value: string) => void;
+  setSearchValue: React.Dispatch<React.SetStateAction<string>>;
 };
 
 export default function Header({ searchValue, setSearchValue }: HeaderProps) {

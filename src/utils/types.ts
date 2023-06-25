@@ -1,20 +1,11 @@
-enum SelectedPage {
-  Home = "home",
-  Benefits = "benefits",
-  OurClasses = "ourclasses",
-  ContactUs = "contactus",
-}
-
-interface ResType {
-  icon: JSX.Element;
+export interface ProductsType {
+  id: string;
   title: string;
+  images: string[];
+  price: number;
   description: string;
 }
 
-interface NodeType {
-  name: string;
-  description?: string;
-  image: string;
+export interface ResponseType {
+  products: ProductsType[];
 }
-
-// export = {  };
